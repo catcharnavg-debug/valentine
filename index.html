@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine 💖</title>
+  <style>
+    body {
+      background: #fbe7ec;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    button {
+      padding: 10px 25px;
+      margin: 10px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .yes {
+      background: hotpink;
+      color: white;
+    }
+    .no {
+      background: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" id="question">
+  <h2>Nirali, will you be my Valentine? 💖</h2>
+  <button class="yes" onclick="showGift()">Yes</button>
+  <button class="no" onclick="moveNo()">No</button>
+</div>
+
+<div class="card" id="gift" style="display:none;">
+  <h2>YAY!!! 🎉💝</h2>
+  <img src="https://media.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif" width="200">
+</div>
+
+<script>
+  function showGift() {
+    document.getElementById("question").style.display = "none";
+    document.getElementById("gift").style.display = "block";
+  }
+
+  function moveNo() {
+    alert("No seems a bit shy 😌");
+  }
+</script>
+
+</body>
+</html>
